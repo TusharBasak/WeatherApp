@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+    
+    }
+    
+    body{
+        margin: 0;
+    }
+    
+   
+    a{
+        color:white;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+   
+    p{
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    
+    /* for mobile and desktop and for any column */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile it take full width though we give column size*/
+[class*="col-"]{
+    width: 100%;
+}
+
+/* navbar design starts here */
+.navbar{
+    background-color: #2f969e;
+    padding: 1% 7%;
+    text-align: center;
+ 
+}
+
+
+
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+  .navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 15px;
+    margin: 7px 0px;
+    padding: 6px;
+  }
+
+  .navbar-menu a:hover{
+    background-color: gray;
+    color:black;
+  }
+
+  .navbar img{
+    height: 90px;
+  } 
+ 
+
+
+
+
+/* solve clearfix problem pseudo element */
+.navbar::after{ 
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navbar design ends here */
+
+/* home starts here */
+
+.home{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.home .top-weather-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: 2s;
+}
+
+.home .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.home-description h1{
+    font-size: 3rem;
+}
+
+.home-description p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+
+
+.home .bottom-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: 2s;
+}
+
+.home .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+/* overfolw clearfix clear */
+.home::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* home ends here  */
+
+
+
+/* footer starts here */
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.btn:hover{
+    background-color: gray;
+   
+}
+
+
+/* clearfix problem to solve overflow */
+#footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+
+/* footer ends here */
