@@ -6,6 +6,9 @@ const description =document.querySelector('.description');
 const humidity =document.getElementById('humidity');
 const wind_speed= document.getElementById('wind-speed');
 
+const location_not_found =document.querySelector('.location-not-found');
+
+const weather_body = document.querySelector('.weather-body');
 
 async function checkWeather(country){
     const api_key = "cd7cce47fcb5d027b980827b679b381f";
@@ -15,8 +18,14 @@ async function checkWeather(country){
       response.json()  );
 
      
-   
-     
+      if(weather_data.cod===`404`){
+
+        location_not_found.style.display="flex";
+        weather_body.style.display="none";
+         return;
+      }
+      location_not_found.style.display="none";
+      weather_body.style.display="flex";
     temparature.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
     description.innerHTML = `${weather_data.weather[0].description}`;
     humidity.innerHTML = `${weather_data.main.humidity}%`;
@@ -44,7 +53,10 @@ async function checkWeather(country){
 
     }
 
-    console.log(weather_data);
+
+
+    // console.log(weather_data);
+    document.querySelector('.input-box').value="";
 }
 
 
