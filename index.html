@@ -51,7 +51,8 @@
         <div class="weather">
             <div class="header">
                 <div class="search-box">
-                 <input type="text" placeholder="Enter Your location" class="input-box">
+                    
+                 <input type="text" placeholder="Enter Your Location" class="input-box" id="inputelement">
      
                  <button button class="fa fa-search"   id="searchBtn"></button>
                 </div>
@@ -86,17 +87,64 @@
                     <span id="wind-speed">12Km/H</span><br>
                     <span>Wind Speed</span>
                 </div>
+               
+               
             </div>
 
-               
+          
                   
                 </div>
+                <div>
+                    
+                    <button class="details-button"  id="detailbtn"> More Details </button>
+                
+                </div>
             </div>
+           
         </div>
+       
+            
+
         
     </div>
       
 
+<!-- more details section starts here -->
+   <div class="container">
+    
+ 
+    <div class="display">
+        
+        <h3 >DETAILED INFORMATION</h3>
+        <br><br>
+        <p class="flag">
+            <img src="" alt="country image">
+        </p>
+        <p class="continent">
+            Asia
+         </p>
+        <p class="official-name">
+           Peoples republic of bangladesh 
+        </p>
+        
+         <p class="alternative-name">
+            Bangla
+         </p>
+        <p class="capital">
+           Dhaka
+        </p>
+        <p class="weekday">
+            Taka
+        </p>
+        <p class="borders">
+            borders
+        </p>
+        <p>
+            <button class="details-button"  id="findbtn"> Find Another Country </button> 
+        </p>
+    </div>
+</div>
+<!-- more details section ends here -->
 
     <!-- weather section ends here -->
 
@@ -126,6 +174,8 @@
     <!-- footer ends here  -->
 
     <script src="script.js"></script>
+    <script src="script1.js"></script>
+   
  
 </body>
 </html>

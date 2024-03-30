@@ -274,9 +274,37 @@
 .location-not-found img{
     width: 80%;
 }
+
+.details-button{
+    background-color: #052d2f;
+    color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
 /* find weather ends here */
 
+/* more details starts here */
+.display{
+    margin: 20px;
+   /* min-height: 100vh; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #8514d6; */
+    /* min-width: 100vh; */
+}
 
+.display .flag img{
+    width: 100px;
+}
+
+/* more details ends here */
 
 /* footer starts here */
 
