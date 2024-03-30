@@ -37,7 +37,6 @@ async function checkWeather(country){
 
         location_not_found.style.display="flex";
         weather_body.style.display="none";
-        // window.location.reload();
          return;
       }
       location_not_found.style.display="none";
@@ -118,7 +117,6 @@ function findnewcountry(){
 
 searchBtn.addEventListener('click', ()=>{
    
-   
     checkWeather(inputBox.value);
     
    
@@ -139,5 +137,3 @@ findbtn.addEventListener('click', ()=>{
     
    
 });
-
-
