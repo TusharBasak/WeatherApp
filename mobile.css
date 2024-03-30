@@ -181,6 +181,7 @@
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
+    display: block;
 }
 
 .search-box button:hover{
