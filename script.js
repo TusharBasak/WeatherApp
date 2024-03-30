@@ -37,6 +37,7 @@ async function checkWeather(country){
 
         location_not_found.style.display="flex";
         weather_body.style.display="none";
+        // window.location.reload();
          return;
       }
       location_not_found.style.display="none";
@@ -108,6 +109,7 @@ alternative_name.innerHTML = `<b>Alternative Names : </b>${data[0].altSpellings}
 function findnewcountry(){
     containers.style.display="flex";
     display_info.style.display="none";
+    window.location.reload();
     
 
 }
@@ -115,6 +117,7 @@ function findnewcountry(){
 //  document.querySelector('.input-box').value=" ";
 
 searchBtn.addEventListener('click', ()=>{
+   
    
     checkWeather(inputBox.value);
     
